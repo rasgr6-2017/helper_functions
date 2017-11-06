@@ -56,7 +56,7 @@ def callback(msg):
         ax2.set_rmax(offset)
         plt.ion()
         plt.show()
-        plt.pause(1)
+        plt.pause(0.25)
         plt.clf()
 
         data_list1 = []

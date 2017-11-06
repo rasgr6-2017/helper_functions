@@ -23,8 +23,8 @@ d : decrease angular speed by 0.05
 CTRL-C to quit
 """
 speedBindings={
-		'w':(0.03, 0),
-		's':(-0.03, 0),
+		'w':(0.05, 0),
+		's':(-0.05, 0),
 		'a':(0, 0.4),
 		'd':(0, -0.4),
 	      }
