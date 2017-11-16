@@ -56,7 +56,7 @@ def callback(msg):
         ax2.set_rmax(offset)
         plt.ion()
         plt.show()
-        plt.pause(0.25)
+        plt.pause(0.12)
         plt.clf()
 
         data_list1 = []
@@ -111,7 +111,7 @@ def listener():
     
     rospy.init_node('signal_visualizor', anonymous=True)
     # rospy.Subscriber("/motorcontrol/signal_packup", Float32MultiArray, callback)
-    rospy.Subscriber("/histogram", Float32MultiArray, callback)
+    rospy.Subscriber("/histogram", Float32MultiArray, callback, queue_size=1)
     # sub_2 = rospy.Subscriber("/histogram_2", Float32MultiArray, callback_second)
     # sub_3 = rospy.Subscriber("/histogram_3", Float32MultiArray, callback_third)
     
